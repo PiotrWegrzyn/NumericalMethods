@@ -95,15 +95,25 @@ def simp_integration(fun: str, start: float, end: float) -> float:
 if __name__ == "__main__":
     print("Rectangular integration:")
     rectangular_integration("sin(x)", 0.5, 2.5, 4)
+    rectangular_integration("x**2+2*x+5", 0.5, 5, 4)
+    rectangular_integration("exp(x)", 0.5, 5, 4)
 
     print("\nTrapezoid integration:")
     trapezoid_integration("sin(x)", 0.5, 2.5, 4)
+    trapezoid_integration("x**2+2*x+5", 0.5, 5, 4)
+    trapezoid_integration("exp(x)", 0.5, 5, 4)
 
     print("\nSimpson integration:")
     simp_integration("sin(x)", 0.5, 2.5)
+    simp_integration("x**2+2*x+5", 0.5, 5)
+    simp_integration("exp(x)", 0.5, 5)
 
     print("\nGauss Lagendre integration 2 nodes version:")
     gauss_lagendre_integration("sin(x)", 0.5, 2.5, 2)
+    gauss_lagendre_integration("x**2+2*x+5", 0.5, 5, 4)
+    gauss_lagendre_integration("exp(x)", 0.5, 5, 4)
 
     print("\nGauss Lagendre integration 4 nodes version:")
     gauss_lagendre_integration("sin(x)", 0.5, 2.5, 4)
+    gauss_lagendre_integration("x**2+2*x+5", 0.5, 5, 4)
+    gauss_lagendre_integration("exp(x)", 0.5, 5, 4)
